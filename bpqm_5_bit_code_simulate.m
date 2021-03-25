@@ -9,6 +9,9 @@
 clc
 clear
 
+% Set to turn off the coherent rotation introduced after measuring bit 1
+coherent_rotation_off = 0;
+
 % Number of iterations, i.e. random codeword transmissions, per data point
 blocks = 1e3;  % Increase for accuracy of performance plots
 
@@ -143,6 +146,10 @@ for i = 1:length(th)
         else
             K = Km;
             State_1_op_meas = kron(Had * E1, eye(16)) * State_1_op/sqrt(prob1_1);
+        end
+        
+        if (coherent_rotation_off)
+            K = eye(2);
         end
         
         % Reverse BPQM operations for bit 1
