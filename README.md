@@ -1,9 +1,9 @@
 # bpqm
 Code base for the Belief-Propagation with Quantum Messages (BPQM) Algorithm
 
-MATLAB codes for the 2020 arXiv paper discussing the BPQM algorithm
+MATLAB codes for the npj Quantum Information paper discussing the BPQM algorithm
 
-Paper: https://arxiv.org/abs/2003.04356
+Paper: https://www.nature.com/articles/s41534-021-00422-1 (preprint on arXiv: https://arxiv.org/abs/2003.04356)
 
 Code: https://github.com/nrenga/bpqm
 
